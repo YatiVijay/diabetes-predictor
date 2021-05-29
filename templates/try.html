@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes prediction</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body style="background:black">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#predict">Result</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <div class="header">
+                <h1 style="color: rgb(71, 180, 223);text-align:center;font-weight:bold; margin-top:3%">Diabetes Prediction</h1> <br>
+                <h5 style="color: aliceblue;text-align : center">Predict the probability of having Diabetes<br></h5>
+            </div>
+
+
+            <div class="row">
+                <form action='/predict' method="post" class="col s12"id="home">
+                    <div class="form-row" style="padding: 3%;">
+                        <div class="col-md-4 mb-3" style="margin-top: 3%; padding-right:2%">
+                            <label for="validationServer01" style="color: rgb(172, 203, 228); font-size:22px; text-align:center"><b>Pregnancies</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="No. of Pregnancies" name="1" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3"style="margin-top: 3%;padding-right:2%">
+                            <label for="validationServer01" style="color:rgb(172, 203, 228); font-size:22px; text-align:center"><b>Glucose</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="Glucose level in sugar" name="2" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3"style="margin-top: 3%;padding-right:2%" >
+                            <label for="validationServer01" style="color:rgb(172, 203, 228); font-size:22px; text-align:center"><b>BloodPressure</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="Blood Pressure" name="3" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3"style="margin-top: 3%;padding-right:2%">
+                            <label for="validationServer01" style="color: rgb(172, 203, 228); font-size:22px; text-align:center"><b>SkinThickness</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="Skin Thickness" name="4" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3"style="margin-top: 3%;padding-right:2%">
+                            <label for="validationServer01" style="color: rgb(172, 203, 228); font-size:22px; text-align:center"><b>Insulin</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="Insulin Level" name="5" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3"style="margin-top: 3%;padding-right:2%">
+                            <label for="validationServer01" style="color:rgb(172, 203, 228); font-size:22px; text-align:center"><b>BMI</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="Body Mass Index" name="6" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3"style="margin-top: 3%;padding-right:2%">
+                            <label for="validationServer01" style="color: rgb(172, 203, 228); font-size:22px; text-align:center"><b>DiabetesPedigreeFunction</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="Diabetes Pedigree Function" name="7" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3"style="margin-top: 3%;padding-right:2%">
+                            <label for="validationServer01" style="color:rgb(172, 203, 228); font-size:22px; text-align:center"><b>Age</b></label>
+                            <br>
+                            <br>
+                            <input  placeholder="Age" name="8" id="validationDefault01" type="text" class="form-control" required>
+                        </div>
+                    </div>
+            
+                    <div style="text-align: center;padding-right:2%">
+                        <button type="submit" class="btn btn-info" id="predict">Predict Probability</button>
+                    </div>
+                </form>
+            </div>
+            <div style="padding-top:4%;padding-left:3%;font-size: 15px; color:rgb(234, 237, 240);">
+                <p>&copy; Yati [26yativijay@gmail.com]</p>
+            
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src=".js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+
+
+</body>
+</html>

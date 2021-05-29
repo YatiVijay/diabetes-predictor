@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Diabetes prediction</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+<body style="background:black">
+  <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#result">Result</a>
+              </div>
+          </div>
+      </nav>
+    
+      <div class="content">
+        <div class="header">
+            <h1 style="color: rgb(71, 180, 223);text-align:center;font-weight:bold; margin-top:3%">Diabetes Prediction</h1> <br>
+            <h5 style="color: aliceblue; text-align : center">Predict the probability of having Diabetes<br></h5>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+      <div class="row" style="color:rgb(241, 244, 245);margin-top:2%;margin-left:3.4%;" id="result">
+        <h3 style="font-size: 30px;">{{pred[0]}}</h3>
+      </div>  
+      <div class="row" style="color:rgb(241, 244, 245);margin-top:-3%;margin-left:3.4%;">
+        <h3 style="font-size: 30px;">{{pred[1]}}</h3>
+      </div>   
+      <div style="margin-top:12%; margin-left:3.4%;font-size: 15px; color:rgb(234, 237, 240);">
+        <p>&copy; Yati [26yativijay@gmail.com]</p>
+      </div>  
+    </div>
+    
+  </div>
+
+  
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
